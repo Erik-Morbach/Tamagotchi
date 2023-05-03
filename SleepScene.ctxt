@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=SleepScene
+comment0.text=\n\ Write\ a\ description\ of\ class\ SleepScene\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment1.params=actor
+comment1.target=SleepScene(Actor)
+comment2.params=
+comment2.target=void\ loadScene()
+comment3.params=frame\ frameIndex
+comment3.target=void\ drawZzz(Frame,\ int)
+numComments=4

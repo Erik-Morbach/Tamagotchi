@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=DanceAction
+comment0.text=\n\ Write\ a\ description\ of\ class\ DanceAction\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment1.params=tamagotchi\ need
+comment1.target=DanceAction(Tamagotchi,\ boolean)
+comment2.params=
+comment2.target=void\ execute()
+numComments=3

@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Actor
+comment0.text=\n\ Write\ a\ description\ of\ class\ Actor\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment1.params=
+comment1.target=Actor()
+comment10.params=screen
+comment10.target=void\ setScreen(Screen)
+comment11.params=
+comment11.target=Screen\ getScreen()
+comment2.params=scene
+comment2.target=void\ setCurrentScene(Scene)
+comment3.params=scene
+comment3.target=void\ setDefaultScene(Scene)
+comment4.params=
+comment4.target=Scene\ getCurrentScene()
+comment5.params=
+comment5.target=Scene\ getDefaultScene()
+comment6.params=
+comment6.target=int\ getRow()
+comment7.params=
+comment7.target=int\ getCol()
+comment8.params=x
+comment8.target=void\ setRow(int)
+comment9.params=y
+comment9.target=void\ setCol(int)
+numComments=12

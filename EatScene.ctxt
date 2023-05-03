@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=EatScene
+comment0.text=\n\ Write\ a\ description\ of\ class\ EatScene\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment1.params=actor
+comment1.target=EatScene(Actor)
+comment2.params=
+comment2.target=void\ loadScene()
+comment3.params=begin\ target\ frame\ percent
+comment3.target=void\ drawTongue(Actor,\ Actor,\ Frame,\ double)
+comment3.text=\n\ draw\ a\ tongue\ on\ frame.\ 0\ to\ 50%\ the\ tongue\ is\ going\ to\ target\n\ 51\ to\ 100%\ the\ tongue\ is\ coming\ back\n\n\ @param\ begin\ \n\ @param\ target\ \n\ @param\ frame\ \n\ @param\ percent\ \n
+comment4.params=bug\ frame\ frameIndex
+comment4.target=void\ drawBug(Actor,\ Frame,\ int)
+numComments=5

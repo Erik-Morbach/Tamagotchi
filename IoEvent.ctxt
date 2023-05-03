@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=IoEvent
+comment0.text=\n\ Write\ a\ description\ of\ class\ IoEvent\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=tamagotchi
+comment1.target=IoEvent(Tamagotchi)
+comment2.params=
+comment2.target=int\ readOption()
+comment3.params=option
+comment3.target=void\ executeOption(int)
+numComments=4

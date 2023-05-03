@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Frame
+comment0.text=\n\ Write\ a\ description\ of\ class\ Frame\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment1.params=
+comment1.target=java.util.ArrayList\ getData()
+comment2.params=data
+comment2.target=void\ setData(java.util.ArrayList)
+comment3.params=file
+comment3.target=boolean\ loadFromFile(java.io.File)
+numComments=4

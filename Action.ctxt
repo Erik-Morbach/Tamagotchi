@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Action
+comment0.text=\n\ Write\ a\ description\ of\ class\ Action\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment1.params=actionName\ tamagotchi\ executionNeeded
+comment1.target=Action(java.lang.String,\ Tamagotchi,\ boolean)
+comment2.params=
+comment2.target=void\ setAlreadyExecuted()
+comment3.params=
+comment3.target=boolean\ isExecutionNeeded()
+comment4.params=
+comment4.target=boolean\ isAlreadyExecuted()
+comment5.params=
+comment5.target=void\ execute()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=DeadScene
+comment0.text=\n\ Write\ a\ description\ of\ class\ EatScene\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment1.params=actor
+comment1.target=DeadScene(Actor)
+comment2.params=
+comment2.target=void\ loadScene()
+numComments=3

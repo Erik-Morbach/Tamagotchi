@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=ExplosionScene
+comment0.text=\n\ Write\ a\ description\ of\ class\ EatScene\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment1.params=actor
+comment1.target=ExplosionScene(Actor)
+comment2.params=
+comment2.target=void\ loadScene()
+comment3.params=frame\ frameIndex
+comment3.target=void\ drawBaseExplosion(Frame,\ int)
+comment4.params=frame\ frameIndex
+comment4.target=void\ drawExplosionFloatingFirstStage(Frame,\ int)
+comment5.params=frame\ frameIndex
+comment5.target=void\ drawExplosionFinalStage(Frame,\ int)
+numComments=6

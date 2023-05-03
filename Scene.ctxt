@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Scene
+comment0.text=\n\ Write\ a\ description\ of\ class\ Scene\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment1.params=screen
+comment1.target=Scene(Screen)
+comment2.params=
+comment2.target=boolean\ isSceneEnded()
+comment3.params=
+comment3.target=void\ reset()
+comment4.params=
+comment4.target=Frame\ getNextFrame()
+numComments=5

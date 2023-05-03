@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=ScreenThread
+comment0.text=\n\ Write\ a\ description\ of\ class\ ScreenThread\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment1.params=screen\ tamagotchi
+comment1.target=ScreenThread(Screen,\ Tamagotchi)
+comment2.params=
+comment2.target=void\ run()
+numComments=3
