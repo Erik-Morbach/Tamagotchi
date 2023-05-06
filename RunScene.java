@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.io.File;
 
 /**
@@ -9,10 +8,8 @@ import java.io.File;
  */
 public class RunScene extends Scene
 {
-    private Actor actor;
     public RunScene(Actor actor){
         super(actor.getScreen());
-        this.actor = actor;
         this.loadScene();
     }
 

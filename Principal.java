@@ -12,10 +12,9 @@ public class Principal
         Scanner scn = new Scanner(System.in);
         System.out.print("Digite o nome do sapo: ");
         String nome = scn.nextLine();
-        Screen screen = new Screen(10, 20, 20);
+        Screen screen = new Screen(10, 50, 20);
         Tamagotchi tamagotchi = new Tamagotchi(nome);
         IoEvent io = new IoEvent(tamagotchi);
-
 
         screen.setActor(tamagotchi);
         tamagotchi.setScreen(screen);

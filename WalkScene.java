@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.io.File;
 
 /**
@@ -9,10 +8,8 @@ import java.io.File;
  */
 public class WalkScene extends Scene
 {
-    private Actor actor;
     public WalkScene(Actor actor){
         super(actor.getScreen());
-        this.actor = actor;
         this.loadScene();
     }
 
@@ -24,13 +21,5 @@ public class WalkScene extends Scene
             currentFrame.loadFromFile(new File("assets/walk/F"+frame+".txt"));
             this.frames.add(currentFrame);
         }
-
     }
-
-
-
-
-
-
-
 }

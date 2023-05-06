@@ -1,4 +1,5 @@
 import java.io.File;
+
 /**
  * Write a description of class EatScene here.
  *
@@ -7,10 +8,8 @@ import java.io.File;
  */
 public class DeadScene extends Scene
 {
-    private Actor actor;
     public DeadScene(Actor actor){
         super(actor.getScreen());
-        this.actor = actor;
         this.loadScene();
     }
 

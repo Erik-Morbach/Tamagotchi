@@ -9,10 +9,8 @@ import java.io.File;
  */
 public class SleepScene extends Scene
 {
-    private Actor actor;
     public SleepScene(Actor actor){
         super(actor.getScreen());
-        this.actor = actor;
         this.loadScene();
     }
 

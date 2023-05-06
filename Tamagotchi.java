@@ -30,7 +30,7 @@ public class Tamagotchi extends Actor
         super();
         this.name = name;
         this.causeOfDeath = CauseOfDeath.NONE;
-        this.age = 14;
+        this.age = 0;
         this.weight = 1;
         this.points = 0;
         
@@ -66,7 +66,7 @@ public class Tamagotchi extends Actor
         if(this.hungry) response += "Hungry ";
         if(this.bored) response += "Bored ";
         if(response.length()==0) return "";
-        return response.substring(0, response.length()-1);
+        return response.strip();
     }
 
     public boolean haveSomeNecessity(){

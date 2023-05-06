@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * Write a description of class Screen here.
@@ -52,22 +51,22 @@ public class Screen
 
     public String generateStateString(Tamagotchi tamagotchi){
         String stateStr = "";
-        stateStr += "-".repeat(52) + "\n";
+        stateStr += "-".repeat(this.columns+2) + "\n";
 
         String aux = String.format("Nome: %s; Idade: %d; Peso: %d", tamagotchi.getName(), tamagotchi.getAge(), tamagotchi.getWeight());
-        stateStr += String.format("|%50s|\n",aux);
+        stateStr += String.format("|%"+this.columns+"s|\n",aux);
 
         aux = String.format("Necessidades: %s", tamagotchi.getNeeds());
-        stateStr += String.format("|%-50s|\n",aux);
+        stateStr += String.format("|%-"+this.columns+"s|\n",aux);
         aux = String.format("Pontuacao: %s", tamagotchi.getPoints());
-        stateStr += String.format("|%-50s|\n",aux);
-        stateStr += "-".repeat(52) + "\n";
+        stateStr += String.format("|%-"+this.columns+"s|\n",aux);
+        stateStr += "-".repeat(this.columns+2) + "\n";
         return stateStr;
     }
 
     public String generateActionsString(Tamagotchi tamagotchi){
         String actionsStr = "";
-        actionsStr += "-".repeat(52) + "\n";
+        actionsStr += "-".repeat(this.columns+2) + "\n";
         if(tamagotchi.isAlive()){
             ArrayList<Action> actions = tamagotchi.getActionsToTake();
             actionsStr += this.generateMenuString(actions);
@@ -75,7 +74,7 @@ public class Screen
         else{
             actionsStr += this.generateEndGameString(tamagotchi);
         }
-        actionsStr += "-".repeat(52) + "\n";
+        actionsStr += "-".repeat(this.columns+2) + "\n";
         return actionsStr;
     }
 
@@ -87,13 +86,13 @@ public class Screen
         String frameStr = "";
 
         //Draw border
-        frameStr += "-".repeat(52) + "\n";
+        frameStr += "-".repeat(this.columns+2) + "\n";
 
         for(String line: frame.getData())
-            frameStr += String.format("|%50s|\n",line);
+            frameStr += String.format("|%-"+this.columns+"s|\n",line);
         
         //Draw border
-        frameStr += "-".repeat(52) + "\n";
+        frameStr += "-".repeat(this.columns+2) + "\n";
 
         return frameStr;
     }
@@ -105,7 +104,7 @@ public class Screen
             String aux = String.format("%d: %s", index, actions.get(index));
             if(actions.get(index).isExecutionNeeded())
                 aux += " <-- Acao Necessaria";
-            menuStr += String.format("|%-50s|\n", aux);
+            menuStr += String.format("|%-"+this.columns+"s|\n", aux);
         }
         return menuStr;
     }
@@ -129,7 +128,7 @@ public class Screen
         }
 
         String aux = String.format("Causa da morte: %s",codStr);
-        endGameStr += String.format("|%-50s|\n", aux);
+        endGameStr += String.format("|%-"+this.columns+"s|\n", aux);
         return endGameStr;
     }
 }

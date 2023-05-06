@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+import java.io.File;
+
 /**
  * Write a description of class EatScene here.
  *
@@ -7,28 +8,17 @@ import java.util.ArrayList;
  */
 public class StarvedScene extends Scene
 {
-    private Actor actor;
     public StarvedScene(Actor actor){
         super(actor.getScreen());
-        this.actor = actor;
         this.loadScene();
     }
 
     private void loadScene(){
         this.frames.clear();
         this.frameIndex = 0;
-        for(int frame=0;frame<=10;frame++){
+        for(int frame=4;frame<=7*4;frame++){
             Frame currentFrame = new Frame();
-            ArrayList<String> data = new ArrayList<String>();
-
-            for(int row=0;row<=20;row++){
-                String line = " ";
-                if(row == 10)
-                    line = "Death by starve";
-                line = String.format("%17s %2d", line, frame);
-                data.add(line);
-            }
-            currentFrame.setData(data);
+            currentFrame.loadFromFile(new File("assets/starve/starveF"+(frame/4)+".txt"));
             this.frames.add(currentFrame);
         }
 

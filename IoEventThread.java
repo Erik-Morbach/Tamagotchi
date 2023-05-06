@@ -1,5 +1,4 @@
 import java.lang.Runnable;
-import java.util.Scanner;
 
 /**
  * Write a description of class IoEventThread here.

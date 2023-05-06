@@ -9,10 +9,8 @@ import java.io.File;
  */
 public class EatALotScene extends Scene
 {
-    private Actor actor;
     public EatALotScene(Actor actor){
         super(actor.getScreen());
-        this.actor = actor;
         this.loadScene();
     }
 

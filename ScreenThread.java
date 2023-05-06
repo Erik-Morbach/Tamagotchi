@@ -1,7 +1,4 @@
 import java.lang.Runnable;
-import java.util.Scanner;
-import java.util.ArrayList;
-
 
 /**
  * Write a description of class ScreenThread here.

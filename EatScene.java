@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.io.File;
+
 /**
  * Write a description of class EatScene here.
  *
@@ -8,10 +9,8 @@ import java.io.File;
  */
 public class EatScene extends Scene
 {
-    private Actor actor;
     public EatScene(Actor actor){
         super(actor.getScreen());
-        this.actor = actor;
         this.loadScene();
     }
 
