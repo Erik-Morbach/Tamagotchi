@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=EatALotAction
-comment0.text=\n\ Write\ a\ description\ of\ class\ EatALotAction\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment0.text=\n\ Acao\ de\ Comer\ Muito\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
 comment1.params=tamagotchi\ needed
 comment1.target=EatALotAction(Tamagotchi,\ boolean)
+comment1.text=\n\ Metodo\ construtor\n\n\ @param\ tamagotchi\ Referencia\ utilizada\ para\ comer\ muito\n\ @param\ needed\ define\ se\ a\ acao\ e\ necessaria\n
 comment2.params=
-comment2.target=void\ execute()
+comment2.target=void\ executeImpl()
+comment2.text=\n\ Faz\ a\ referencia\ comer\ muito\ e\ seta\ a\ cena\ atual\ para\ cena\ de\ comer\ muito\n
 numComments=3

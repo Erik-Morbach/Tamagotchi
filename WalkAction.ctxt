@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=WalkAction
-comment0.text=\n\ Write\ a\ description\ of\ class\ WalkAction\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Acao\ de\ caminhar\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
 comment1.params=tamagotchi\ needed
 comment1.target=WalkAction(Tamagotchi,\ boolean)
+comment1.text=\n\ Utiliza\ o\ construtor\ de\ acao\n\n\ @param\ tamagotchi\ Referencia\ para\ a\ execucao\ da\ acao\n\ @param\ needed\ Flag\ que\ define\ se\ a\ acao\ e\ necessaria\n
 comment2.params=
-comment2.target=void\ execute()
+comment2.target=void\ executeImpl()
+comment2.text=\n\ Executa\ a\ acao\ no\ tamagotchi\ e\ seta\ a\ cena\ atual\ para\ cena\ de\ Caminhar\n
 numComments=3

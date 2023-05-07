@@ -1,10 +1,16 @@
 #BlueJ class context
 comment0.target=IoEvent
-comment0.text=\n\ Write\ a\ description\ of\ class\ IoEvent\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Classe\ que\ define\ as\ acoes\ do\ teclado\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
 comment1.params=tamagotchi
 comment1.target=IoEvent(Tamagotchi)
+comment1.text=\n\ Construtor\n
 comment2.params=
-comment2.target=int\ readOption()
-comment3.params=option
-comment3.target=void\ executeOption(int)
-numComments=4
+comment2.target=void\ close()
+comment2.text=\n\ Fecha\ o\ scanner\n
+comment3.params=
+comment3.target=int\ readOption()
+comment3.text=\n\ Le\ o\ proximo\ Int\ do\ teclado\n\n\ @return\ proximo\ int\ digitado\n
+comment4.params=option
+comment4.target=void\ executeOption(int)
+comment4.text=\n\ Carrega\ as\ acoes\ possiveis\ e\ executa\ a\ opcao\ selecionada\n\n
+numComments=5

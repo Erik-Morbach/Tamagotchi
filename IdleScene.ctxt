@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=IdleScene
-comment0.text=\n\ Write\ a\ description\ of\ class\ EatALotScene\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment0.text=\n\ Cena\ Padrao\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
 comment1.params=actor
 comment1.target=IdleScene(Actor)
+comment1.text=\n\ Utiliza\ o\ construtor\ e\ carrega\ a\ cena\n\n\ @param\ actor\ Utilizado\ para\ conseguir\ uma\ referencia\ da\ tela\n
 comment2.params=
 comment2.target=void\ loadScene()
+comment2.text=\n\ carrega\ a\ cena\ baseada\ no\ unico\ frame\ "assets/icon.txt"\n
 numComments=3

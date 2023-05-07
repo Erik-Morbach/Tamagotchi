@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=IoEventThread
-comment0.text=\n\ Write\ a\ description\ of\ class\ IoEventThread\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment0.text=\n\ Thread\ que\ gerencia\ a\ utiliza\ da\ classe\ IoEvent\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
 comment1.params=io\ tamagotchi
 comment1.target=IoEventThread(IoEvent,\ Tamagotchi)
+comment1.text=\n\ Metodo\ construtor\ com\ as\ referencias\ necessarias\n
 comment2.params=
 comment2.target=void\ run()
+comment2.text=\n\ Metodo\ de\ execucao\ da\ Thread.\n
 numComments=3

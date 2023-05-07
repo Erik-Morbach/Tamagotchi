@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=DeadScene
-comment0.text=\n\ Write\ a\ description\ of\ class\ EatScene\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment0.text=\n\ Cena\ de\ morte\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
 comment1.params=actor
 comment1.target=DeadScene(Actor)
+comment1.text=\n\ Utiliza\ o\ construtor\ padr\u00E3o\ de\ cena\ e\ carrega\ a\ cena\n
 comment2.params=
 comment2.target=void\ loadScene()
+comment2.text=\n\ Esta\ cena\ e\ constituida\ por\ um\ unico\ frame\n
 numComments=3

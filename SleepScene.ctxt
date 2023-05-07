@@ -1,10 +1,13 @@
 #BlueJ class context
 comment0.target=SleepScene
-comment0.text=\n\ Write\ a\ description\ of\ class\ SleepScene\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment0.text=\n\ Cena\ de\ dormir\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
 comment1.params=actor
 comment1.target=SleepScene(Actor)
+comment1.text=\n\ Utiliza\ o\ construtor\ e\ carrega\ a\ cena\n\n\ @param\ actor\ Utilizado\ para\ pegar\ a\ referencia\ da\ tela\n
 comment2.params=
 comment2.target=void\ loadScene()
+comment2.text=\n\ Carrega\ a\ cena\n
 comment3.params=frame\ frameIndex
 comment3.target=void\ drawZzz(Frame,\ int)
+comment3.text=\n\ Desenha\ no\ Frame\ os\ Z\ z,\ para\ demonstrar\ sono\n\n\ @param\ frame\ Referencia\ onde\ sera\ gerado\ os\ simbolos\n\ @param\ frameIndex\ define\ em\ que\ ponto\ da\ animacao\ esta\ (0\ -\ 10)\n
 numComments=4

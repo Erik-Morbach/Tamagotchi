@@ -1,18 +1,25 @@
-
 /**
- * Write a description of class RunAction here.
+ * Acao de correr
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Erik
+ * @version 1.0.0
  */
 public class RunAction extends Action
 {
+    /**
+     * Utiliza o construtor de acao
+     *
+     * @param tamagotchi Referencia para a execucao da acao
+     * @param needed Flag que define se a acao e necessaria
+     */
     public RunAction(Tamagotchi tamagotchi, boolean needed){
-        super("Correr", tamagotchi, needed);
+        super("Correr", needed, tamagotchi);
     }
 
-    public void execute(){
-        this.setAlreadyExecuted();
+    /**
+     * Executa a acao no tamagotchi e seta a cena atual para cena de corrida
+     */
+    public void executeImpl(){
         this.tamagotchi.run();
         this.tamagotchi.setCurrentScene(new RunScene(this.tamagotchi));
     }

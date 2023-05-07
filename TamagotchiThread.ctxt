@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=TamagotchiThread
-comment0.text=\n\ Write\ a\ description\ of\ class\ TamagotchiThread\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Gerenciador\ das\ necessidades\ do\ Tamagotchi\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=tamagotchi
 comment1.target=TamagotchiThread(Tamagotchi)
+comment1.text=\n\ Construtor\n
 comment2.params=
 comment2.target=void\ run()
+comment2.text=\n\ Metodo\ de\ execucao\ da\ Thread\n
 numComments=3

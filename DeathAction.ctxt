@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=DeathAction
-comment0.text=\n\ Write\ a\ description\ of\ class\ DanceAction\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment0.text=\n\ Acao\ de\ morte.\ Utilizada\ para\ setar\ a\ cena\ correta\ baseada\ na\ forma\ da\ morte\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
 comment1.params=tamagotchi
 comment1.target=DeathAction(Tamagotchi)
+comment1.text=\n\ Metodo\ Construtor\n\n\ @param\ tamagotchi\ Referencia\ que\ sera\ utilizada\ na\ execucao\n
 comment2.params=
-comment2.target=void\ execute()
+comment2.target=void\ executeImpl()
+comment2.text=\n\ Seta\ a\ cena\ baseado\ na\ forma\ da\ morte\ do\ tamagotchi\n
 numComments=3

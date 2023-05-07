@@ -1,18 +1,25 @@
 import java.io.File;
 
 /**
- * Write a description of class EatScene here.
+ * Cena de explosao
  *
  * @author Erik
  * @version 1.0.0
  */
 public class ExplosionScene extends Scene
 {
+    /**
+     * Utiliza o construtor e carrega a cena
+     * @param actor Utilizado para conseguir uma referencia para a tela
+     */
     public ExplosionScene(Actor actor){
         super(actor.getScreen());
         this.loadScene();
     }
 
+    /**
+     * Carrega a cena da morte por explosao. Diretorio "assets/explosion/"
+     */
     private void loadScene(){
         this.frames.clear();
         this.frameIndex = 0;

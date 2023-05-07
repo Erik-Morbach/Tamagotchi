@@ -1,16 +1,23 @@
-
 /**
- * Write a description of class DanceAction here.
+ * Acao de morte. Utilizada para setar a cena correta baseada na forma da morte
  *
  * @author Erik
  * @version 1.0.0
  */
 public class DeathAction extends Action
 {
+    /**
+     * Metodo Construtor
+     *
+     * @param tamagotchi Referencia que sera utilizada na execucao
+     */
     public DeathAction(Tamagotchi tamagotchi){
-        super("Death", tamagotchi, true);
+        super("Death", true, tamagotchi);
     }
-    public void execute(){
+    /**
+     * Seta a cena baseado na forma da morte do tamagotchi
+     */
+    public void executeImpl(){
         switch(this.tamagotchi.getCauseOfDeath()){
             case OLD:
                 this.tamagotchi.setCurrentScene(new DeathByAgeScene(this.tamagotchi));
@@ -22,7 +29,7 @@ public class DeathAction extends Action
                 this.tamagotchi.setCurrentScene(new ExplosionScene(this.tamagotchi));
                 break;
             default:
-                this.tamagotchi.setCurrentScene(new ExplosionScene(this.tamagotchi)); // Just for fun
+                this.tamagotchi.setCurrentScene(new ExplosionScene(this.tamagotchi));
                 break;
         }
         this.tamagotchi.setDefaultScene(new DeadScene(this.tamagotchi));

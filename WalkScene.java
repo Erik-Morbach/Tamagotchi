@@ -1,18 +1,26 @@
 import java.io.File;
 
 /**
- * Write a description of class WalkScene here.
+ * Cena de caminhar
  *
  * @author Erik
  * @version 1.0.0
  */
 public class WalkScene extends Scene
 {
+    /**
+     * Utiliza o construtor e carrega a cena
+     *
+     * @param actor Utilizado para pegar a referencia da tela
+     */
     public WalkScene(Actor actor){
         super(actor.getScreen());
         this.loadScene();
     }
 
+    /**
+     * Carrega a cena de corrida. Diretorio "assets/walk/"
+     */
     private void loadScene(){
         this.frames.clear();
         this.frameIndex = 0;

@@ -1,20 +1,24 @@
 import java.io.File;
 
 /**
- * Write a description of class DanceScene here.
+ * Cena de Danca
  *
  * @author Erik
  * @version 1.0.0
  */
 public class DanceScene extends Scene
 {
-    private Actor actor;
+    /**
+     * Utiliza o construtor padrão de cena e carrega a cena
+     */
     public DanceScene(Actor actor){
         super(actor.getScreen());
-        this.actor = actor;
         this.loadScene();
     }
 
+    /**
+     * carrega a cena baseado nos arquivos do diretorio "assets/dance/"
+     */
     private void loadScene(){
         this.frames.clear();
         this.frameIndex = 0;
@@ -27,5 +31,4 @@ public class DanceScene extends Scene
             }
         }
     }
-
 }

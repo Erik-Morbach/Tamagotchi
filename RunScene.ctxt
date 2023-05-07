@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=RunScene
-comment0.text=\n\ Write\ a\ description\ of\ class\ RunScene\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment0.text=\n\ Cena\ da\ Corrida\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
 comment1.params=actor
 comment1.target=RunScene(Actor)
+comment1.text=\n\ Utiliza\ o\ construtor\ e\ carrega\ a\ cena\n\n\ @param\ actor\ Utilizado\ para\ pegar\ a\ referencia\ da\ tela\n
 comment2.params=
 comment2.target=void\ loadScene()
+comment2.text=\n\ Carrega\ a\ cena\ de\ corrida.\ Diretorio\ "assets/run/"\n
 numComments=3

@@ -1,9 +1,8 @@
-
 /**
- * Enumeration class CauseOfDeath - write a description of the enum class here
+ * Enum com todas as formas de morte do tamagotchi
  *
- * @author (your name here)
- * @version (version number or date here)
+ * @author Erik
+ * @version 1.0.0
  */
 public enum CauseOfDeath
 {

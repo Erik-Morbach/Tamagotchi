@@ -1,18 +1,26 @@
 import java.io.File;
 
 /**
- * Write a description of class RunScene here.
+ * Cena da Corrida
  *
  * @author Erik
  * @version 1.0.0
  */
 public class RunScene extends Scene
 {
+    /**
+     * Utiliza o construtor e carrega a cena
+     *
+     * @param actor Utilizado para pegar a referencia da tela
+     */
     public RunScene(Actor actor){
         super(actor.getScreen());
         this.loadScene();
     }
 
+    /**
+     * Carrega a cena de corrida. Diretorio "assets/run/"
+     */
     private void loadScene(){
         this.frames.clear();
         this.frameIndex = 0;

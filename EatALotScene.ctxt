@@ -1,13 +1,16 @@
 #BlueJ class context
 comment0.target=EatALotScene
-comment0.text=\n\ Write\ a\ description\ of\ class\ EatALotScene\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment0.text=\n\ Cena\ de\ comer\ muito\n\n\ Unica\ diferenca(em\ relacao\ a\ Cena\ de\ comer)\ e\ a\ quantidade\ de\ moscas\ na\ tela\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
 comment1.params=actor
 comment1.target=EatALotScene(Actor)
+comment1.text=\n\ Utiliza\ o\ construtor\ de\ Cena\ e\ carrega\ ela\n\n\ @param\ actor\ Gera\ a\ referencia\ para\ a\ tela\n
 comment2.params=
 comment2.target=void\ loadScene()
+comment2.text=\n\ Gera\ os\ frames\ da\ cena\n
 comment3.params=begin\ target\ frame\ percent
 comment3.target=void\ drawTongue(Actor,\ Actor,\ Frame,\ double)
-comment3.text=\n\ draw\ a\ tongue\ on\ frame.\ 0\ to\ 50%\ the\ tongue\ is\ going\ to\ target\n\ 51\ to\ 100%\ the\ tongue\ is\ coming\ back\n\n\ @param\ begin\ \n\ @param\ target\ \n\ @param\ frame\ \n\ @param\ percent\ \n
+comment3.text=\n\ desenha\ a\ lingua\ no\ frame.\ 0\ ate\ 50%\ a\ lingua\ esta\ indo\ em\ direcao\ ao\ alvo\n\ 51\ ate\ 100%\ a\ lingua\ esta\ voltando\n\n\ @param\ begin\ Base\ da\ lingua\n\ @param\ target\ Alvo\ que\ a\ lingua\ deve\ alcancar\n\ @param\ frame\ Frame\ onde\ sera\ carregada\n\ @param\ percent\ Porcentagem\ da\ animacao\n
 comment4.params=bug\ frame\ frameIndex
 comment4.target=void\ drawBug(Actor,\ Frame,\ int)
+comment4.text=\n\ Desenha\ as\ moscas\ na\ tela\ baseado\ no\ frame\ em\ que\ esta\n\ Da\ ponta\ esquerda\ ate\ o\ centro\ da\ tela\ com\ a\ altura\ (considera\ que\ o\ frame\ vai\ de\ 0\ a\ 30)\n\ variando\ de\ acordo\ com\ uma\ senoide\n\n\ @param\ bug\ Ponto\ atual\ das\ moscas\n\ @param\ frame\ Frame\ onde\ sera\ carregada\n\ @param\ frameIndex\ indice\ do\ frame\ para\ saber\ a\ porcentagem\ da\ animacao\n
 numComments=5

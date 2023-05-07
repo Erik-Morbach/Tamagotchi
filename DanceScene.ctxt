@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=DanceScene
-comment0.text=\n\ Write\ a\ description\ of\ class\ DanceScene\ here.\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
+comment0.text=\n\ Cena\ de\ Danca\n\n\ @author\ Erik\n\ @version\ 1.0.0\n
 comment1.params=actor
 comment1.target=DanceScene(Actor)
+comment1.text=\n\ Utiliza\ o\ construtor\ padr\u00E3o\ de\ cena\ e\ carrega\ a\ cena\n
 comment2.params=
 comment2.target=void\ loadScene()
+comment2.text=\n\ carrega\ a\ cena\ baseado\ nos\ arquivos\ do\ diretorio\ "assets/dance/"\n
 numComments=3

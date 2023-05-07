@@ -1,18 +1,24 @@
 import java.io.File;
 
 /**
- * Write a description of class EatScene here.
+ * Cena da morte por Idade
  *
  * @author Erik
  * @version 1.0.0
  */
 public class DeathByAgeScene extends Scene
 {
+    /**
+     * Utiliza o construtor de Cena e carrega a cena da morte
+     */
     public DeathByAgeScene(Actor actor){
         super(actor.getScreen());
         this.loadScene();
     }
 
+    /**
+     * Carrega a cena da morte por velhice. Diretorio "assets/old/"
+     */
     private void loadScene(){
         this.frames.clear();
         this.frameIndex = 0;
@@ -21,8 +27,5 @@ public class DeathByAgeScene extends Scene
             currentFrame.loadFromFile(new File("assets/old/oldF" + frame + ".txt"));
             this.frames.add(currentFrame);
         }
-
     }
-
-
 }

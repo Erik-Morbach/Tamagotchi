@@ -1,102 +1,124 @@
 import java.util.ArrayList;
 
 /**
- * Write a description of class Screen here.
+ * Define a Cena
  *
  * @author Erik
  * @version 1.0.0
  */
 public class Screen
 {
+    /*
+     * framerate da tela
+     */
     private int frameRate;
+    /*
+     * Dimensoes da tela
+     */
     private int rows, columns;
+    /*
+     * Ator principal da cena
+     */
     private Actor actor;
 
+    /**
+     * Construtor
+     */
     public Screen(int frameRate, int rows, int columns){
         this.frameRate = frameRate;
         this.rows = rows;
         this.columns = columns;
     }
 
+    // Metodos de acesso
     public void setActor(Actor actor){ this.actor = actor; }
     public Actor getActor(){ return this.actor; }
+    public int getFrameRate(){ return this.frameRate; }
+    public int getRows(){ return this.rows; }
+    public int getColumns(){ return this.columns; }
 
+    /**
+     * pega a cena atual
+     */
     public Scene getCurrentScene(){
-        if(this.actor == null) return null;
-        Scene currentScene = this.actor.getCurrentScene();
-        if(currentScene == null){
-            currentScene = this.actor.getDefaultScene();
-            currentScene.reset();
-            this.actor.setCurrentScene(currentScene);
+        if(this.actor == null) return null; // Se nao tem ator, nao tem cena
+        Scene currentScene = this.actor.getCurrentScene(); // pega cena atual do ator
+        if(currentScene == null){ // se a cena atual for nula
+            currentScene = this.actor.getDefaultScene(); // pega cena padrao
+            currentScene.reset(); // reseta a cena
+            this.actor.setCurrentScene(currentScene); // seta como cena atual do ator
         }
-
         return currentScene;
     }
 
+    /**
+     * seta a cena atual para nullo
+     */
     public void popCurrentScene(){
         if(this.actor != null)
             this.actor.setCurrentScene(null);
     }
 
-    public int getFrameRate(){
-        return this.frameRate;
-    }
-    public int getRows(){
-        return this.rows;
-    }
-    public int getColumns(){
-        return this.columns;
-    }
-
-
-    public String generateStateString(Tamagotchi tamagotchi){
+    /**
+     * Gera uma string de barra de status para o tamagotchi
+     */
+    public String generateHeaderString(Tamagotchi tamagotchi){
         String stateStr = "";
-        stateStr += "-".repeat(this.columns+2) + "\n";
+        stateStr += "-".repeat(this.columns+2) + "\n"; // Borda
 
+        // Status padrao (nome, idade, peso)
         String aux = String.format("Nome: %s; Idade: %d; Peso: %d", tamagotchi.getName(), tamagotchi.getAge(), tamagotchi.getWeight());
         stateStr += String.format("|%"+this.columns+"s|\n",aux);
 
+        // Necessidades atuais
         aux = String.format("Necessidades: %s", tamagotchi.getNeeds());
         stateStr += String.format("|%-"+this.columns+"s|\n",aux);
+
+        // Pontuacao atual
         aux = String.format("Pontuacao: %s", tamagotchi.getPoints());
         stateStr += String.format("|%-"+this.columns+"s|\n",aux);
-        stateStr += "-".repeat(this.columns+2) + "\n";
+
+        stateStr += "-".repeat(this.columns+2) + "\n"; // Borda
         return stateStr;
     }
 
-    public String generateActionsString(Tamagotchi tamagotchi){
+    /**
+     * Se o tamagotchi esta vivo, gera uma barra com as acoes possiveis
+     * Se o tamagotchi esta morto, gera uma barra com a causa da morte
+     */
+    public String generateFooterString(Tamagotchi tamagotchi){
         String actionsStr = "";
-        actionsStr += "-".repeat(this.columns+2) + "\n";
-        if(tamagotchi.isAlive()){
-            ArrayList<Action> actions = tamagotchi.getActionsToTake();
-            actionsStr += this.generateMenuString(actions);
+        actionsStr += "-".repeat(this.columns+2) + "\n"; // borda
+        if(tamagotchi.isAlive()){ // Se esta vivo
+            ArrayList<Action> actions = tamagotchi.getActionsToTake(); // pega as acoes possivei
+            actionsStr += this.generateMenuString(actions); // Gera menu com as acoes
         }
-        else{
-            actionsStr += this.generateEndGameString(tamagotchi);
+        else{ // se esta Morto
+            actionsStr += this.generateEndGameString(tamagotchi); // Gera menu de fim de jogo
         }
-        actionsStr += "-".repeat(this.columns+2) + "\n";
+        actionsStr += "-".repeat(this.columns+2) + "\n"; // borda
         return actionsStr;
     }
 
+    /**
+     * Gera uma string com o frame
+     */
     public String generateFrameString(Frame frame){
-        int rows = frame.getData().size();
-        int columns = 0;
-        if(rows >= 1) columns = frame.getData().get(0).length();
-
         String frameStr = "";
 
-        //Draw border
-        frameStr += "-".repeat(this.columns+2) + "\n";
+        frameStr += "-".repeat(this.columns+2) + "\n"; // borda
 
-        for(String line: frame.getData())
+        for(String line: frame.getData()) // Desenha o frame 
             frameStr += String.format("|%-"+this.columns+"s|\n",line);
-        
-        //Draw border
-        frameStr += "-".repeat(this.columns+2) + "\n";
+
+        frameStr += "-".repeat(this.columns+2) + "\n"; // borda
 
         return frameStr;
     }
 
+    /**
+     * Dadas acoes, gera um menu com as acoes, seus indices e quais sao necessarias
+     */
     public String generateMenuString(ArrayList<Action> actions){
         String menuStr = "";
 
@@ -109,6 +131,9 @@ public class Screen
         return menuStr;
     }
 
+    /**
+     * Gera o menu de fim de jogo com a causa da morte do tamagotchi
+     */
     public String generateEndGameString(Tamagotchi tamagotchi){
         String endGameStr = "";
         CauseOfDeath cod = tamagotchi.getCauseOfDeath();
